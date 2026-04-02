@@ -13,12 +13,16 @@ const HomeComponent = () => {
             <div className="col-lg-8 mx-auto text-center">
               <h1 className="display-1 fw-bold mb-3">MJ&ROBERTS</h1>
               <p className="lead fs-2 fw-light mb-4">Engineering Resilience into the Global Enterprise.</p>
-              <p className="lead mb-5">We orchestrate Converged Environments — harmonizing Salesforce, AWS, and AI to bridge the Innovation-Infrastructure Gap.</p>
+              <p className="lead mb-5">
+                We orchestrate Converged Environments — harmonizing Salesforce, AWS, and AI to bridge the Innovation-Infrastructure Gap.
+              </p>
+
               <div className="d-flex flex-wrap justify-content-center gap-4 mb-5">
                 <span className="badge bg-light text-dark px-4 py-2 fs-6 rounded-pill">Salesforce</span>
                 <span className="badge bg-light text-dark px-4 py-2 fs-6 rounded-pill">AWS</span>
                 <span className="badge bg-light text-dark px-4 py-2 fs-6 rounded-pill">AI</span>
               </div>
+
               <div className="d-flex gap-3 justify-content-center">
                 <button className="btn btn-primary btn-lg px-5">Get in touch</button>
                 <button className="btn btn-outline-light btn-lg px-5">Our Services</button>
@@ -55,6 +59,7 @@ const HomeComponent = () => {
             <h2 className="display-5 fw-bold">Core Services</h2>
             <p className="lead text-muted">Full-lifecycle engagement from strategy to support</p>
           </div>
+
           <div className="row g-4">
             {[
               { title: "IT Consulting & Digital Transformation", icon: "bi bi-diagram-3", desc: "Postural assessments, modernization strategy, TCO analysis & roadmap design." },
@@ -82,8 +87,11 @@ const HomeComponent = () => {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold">Solutions Powered by 360° Service Model</h2>
-            <p className="lead text-muted">Consultation · Implementation · Development · Integration · Support · Modernization</p>
+            <p className="lead text-muted">
+              Consultation · Implementation · Development · Integration · Support · Modernization
+            </p>
           </div>
+
           <div className="row g-4">
             {[
               { title: "CRM (Salesforce, Dynamics 365)", desc: "Full-cycle implementation & Zero-Copy Integration with data lakes." },
@@ -113,6 +121,7 @@ const HomeComponent = () => {
             <h2 className="display-5 fw-bold">The Partner Stack</h2>
             <p className="lead text-muted">Consultation · Implementation · Integration · Support</p>
           </div>
+
           <div className="row g-4 justify-content-center">
             {["Salesforce", "AWS", "Microsoft Azure", "SAP Commerce", "Atlassian", "Power BI"].map((tech, idx) => (
               <div key={idx} className="col-6 col-md-4 col-lg-2 text-center">
@@ -133,6 +142,7 @@ const HomeComponent = () => {
             <h2 className="display-5 fw-bold">Vertically Aligned Expertise</h2>
             <p className="lead text-muted">High-consequence sectors we serve</p>
           </div>
+
           <div className="row g-4">
             {["Healthcare (HIPAA-compliant)", "Finance & Insurance", "Manufacturing & Retail", "Software & Hi-Tech", "Professional Services"].map((ind, idx) => (
               <div key={idx} className="col-md-4 col-lg-2 text-center">
@@ -146,29 +156,49 @@ const HomeComponent = () => {
         </div>
       </section>
 
-      {/* Insights Section */}
+      {/* Insights */}
       <section className="py-5">
         <div className="container">
           <div className="row g-5">
             <div className="col-md-6">
               <div className="card h-100 border-0 shadow-sm rounded-4">
                 <div className="card-body p-4">
-                  <h3 className="fw-bold mb-4"><i className="bi bi-trending-up me-2 text-primary"></i>Trending Topics</h3>
+                  <h3 className="fw-bold mb-4">
+                    <i className="bi bi-trending-up me-2 text-primary"></i>Trending Topics
+                  </h3>
                   <ul className="list-unstyled">
-                    <li className="mb-3"><i className="bi bi-robot me-2 text-primary"></i> <strong>Agentic AI:</strong> Why the "Chatbot" era is over.</li>
-                    <li className="mb-3"><i className="bi bi-cloud-upload me-2 text-primary"></i> <strong>Cloud Sovereignty:</strong> Maintaining data control in a multi-cloud world.</li>
-                    <li className="mb-3"><i className="bi bi-cube me-2 text-primary"></i> <strong>Blockchain & IoT:</strong> Decentralized trust and edge intelligence.</li>
+                    <li className="mb-3">
+                      <i className="bi bi-robot me-2 text-primary"></i>
+                      <strong>Agentic AI:</strong> Why the "Chatbot" era is over.
+                    </li>
+                    <li className="mb-3">
+                      <i className="bi bi-cloud-upload me-2 text-primary"></i>
+                      <strong>Cloud Sovereignty:</strong> Maintaining data control in a multi-cloud world.
+                    </li>
+                    <li className="mb-3">
+                      <i className="bi bi-cube me-2 text-primary"></i>
+                      <strong>Blockchain & IoT:</strong> Decentralized trust and edge intelligence.
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
+
             <div className="col-md-6">
               <div className="card h-100 border-0 shadow-sm rounded-4">
                 <div className="card-body p-4">
-                  <h3 className="fw-bold mb-4"><i className="bi bi-graph-up me-2 text-primary"></i>Industry Related</h3>
+                  <h3 className="fw-bold mb-4">
+                    <i className="bi bi-graph-up me-2 text-primary"></i>Industry Related
+                  </h3>
                   <ul className="list-unstyled">
-                    <li className="mb-3"><i className="bi bi-credit-card me-2 text-primary"></i> <strong>Fintech:</strong> Secure cloud ledgers and automated compliance.</li>
-                    <li className="mb-3"><i className="bi bi-heart-pulse me-2 text-primary"></i> <strong>Healthtech:</strong> The intersection of Privacy and Predictive Diagnostics.</li>
+                    <li className="mb-3">
+                      <i className="bi bi-credit-card me-2 text-primary"></i>
+                      <strong>Fintech:</strong> Secure cloud ledgers and automated compliance.
+                    </li>
+                    <li className="mb-3">
+                      <i className="bi bi-heart-pulse me-2 text-primary"></i>
+                      <strong>Healthtech:</strong> The intersection of Privacy and Predictive Diagnostics.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -184,6 +214,7 @@ const HomeComponent = () => {
             <h2 className="display-5 fw-bold">Case Studies</h2>
             <p className="lead text-muted">Proven impact across industries</p>
           </div>
+
           <div className="row g-4">
             {[
               { title: "Zero-Copy Revolution", desc: "Retail data federation success — unified 50+ data sources without duplication." },
@@ -196,7 +227,11 @@ const HomeComponent = () => {
                     <i className="bi bi-files fs-1 text-primary mb-3 d-block"></i>
                     <h5 className="fw-bold">{study.title}</h5>
                     <p className="text-muted">{study.desc}</p>
-                    <a href="#" className="text-decoration-none fw-semibold">Read more →</a>
+
+                    {/* FIXED: no href="#" */}
+                    <button className="btn btn-link text-decoration-none fw-semibold p-0">
+                      Read more →
+                    </button>
                   </div>
                 </div>
               </div>
